@@ -35,36 +35,61 @@
                 <td>{{ flight[5] }}</td>
                 <td>{{ flight[6] }}</td>
                 <td>
-                    <form id="delete-form-{{ flight[0] }}" action="{{ url_for('delete_flight', number=flight[0]) }}" method="POST" style="display:inline;">
-                        <button type="button" class="btn btn-danger" onclick="confirmDelete('{{ flight[0] }}')">Delete</button>
-                    </form>
+                    <button type="button" class="btn btn-danger" onclick="openDeleteModal('{{ flight[0] }}')">Delete</button>
                 </td>
             </tr>
-            {% else %}
-            <tr>
-                <td colspan="8">No flights found.</td>
-            </tr>
-            {% endfor %}
+{% endfor %}
         </tbody>
     </table>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div id="deleteModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Confirm Deletion</h3>
+            <span class="close" onclick="closeDeleteModal()">&times;</span>
+        </div>
+        <form id="deleteForm" method="POST">
+            <p>Please enter your password to delete flight <strong id="modalFlightNumber"></strong>.</p>
+            <p><strong>Note:</strong> The password is required for security.</p>
+            <p id="passwordReminder" style="color: var(--secondary-color); font-style: italic;"></p>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" onclick="closeDeleteModal()">Cancel</button>
+                <button type="submit" class="btn btn-danger">Delete Flight</button>
+            </div>
+        </form>
+    </div>
 </div>
 {% endblock %}
 
 {% block scripts %}
 <script>
-function confirmDelete(flightNumber) {
-    const password = prompt("Please enter the password to delete flight " + flightNumber + ":");
-    if (password !== null) {
-        const form = document.getElementById('delete-form-' + flightNumber);
-        
-        // Create hidden input for password
-        const passwordInput = document.createElement('input');
-        passwordInput.type = 'hidden';
-        passwordInput.name = 'delete_password';
-        passwordInput.value = password;
-        form.appendChild(passwordInput);
-        
-        form.submit();
+function openDeleteModal(flightNumber) {
+    const modal = document.getElementById('deleteModal');
+    const form = document.getElementById('deleteForm');
+    const flightNumSpan = document.getElementById('modalFlightNumber');
+    const passwordReminder = document.getElementById('passwordReminder');
+    
+    flightNumSpan.innerText = flightNumber;
+    passwordReminder.innerText = "Hint: Your password is the one you used to login.";
+    form.action = "{{ url_for('delete_flight', number='') }}" + flightNumber;
+    modal.style.display = "block";
+}
+
+function closeDeleteModal() {
+    document.getElementById('deleteModal').style.display = "none";
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById('deleteModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 </script>
