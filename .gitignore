@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+
 .Python
 build/
 develop-eggs/
@@ -214,3 +215,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# project dir and files in work
+
+report.gif
+search_report.gif
+test_Flight_class.py
+test_Flight_class_extended.py
+test_ui.py
+testing/
+.idea/
+
+cookies.txt
+
+

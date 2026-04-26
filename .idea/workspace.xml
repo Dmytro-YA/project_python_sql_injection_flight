@@ -5,13 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9dda27-3d93-4bcf-8ac8-3fd0baa44027" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_Flight_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/TEST_PLAN.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/TEST_SCENARIO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/bug_reports/bug_report_sql_injection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/bug_reports/bug_reports_add_flight_by_number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/bug_reports/bug_reports_delete_flight.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/bug_reports/bug_reports_show_flights_by_number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/bug_reports/bug_reports_show_flights_by_parameters.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/test_cases/test_cases_add_flight.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/test_cases/test_cases_delete_flight.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/test_cases/test_cases_show_flights_by_number.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/test_cases/test_cases_show_flights_by_parameters.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/test_cases/test_cases_sql_injection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flight_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flight_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flight.db" beforeDir="false" afterPath="$PROJECT_DIR$/flight.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_Flight_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_Flight_class.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,8 +60,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Flask server.project_python_sql_injection_flight.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_Flight_class.TestFlight.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_Flight_class.TestFlight.test_create_flight_table.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_ui.test_add_flight_link_exists.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_Flight_class.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_ui.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_ui.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Flight_class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -45,12 +87,97 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="PyCoverageOptionsProvider">
+    <option name="myUseBundledCoveragePy" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testing" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flask server.project_python_sql_injection_flight">
+    <configuration name="Flight_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_python_sql_injection_flight" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flight_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="project_python_sql_injection_flight" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="project_python_sql_injection_flight" type="Python.FlaskServer">
+      <module name="project_python_sql_injection_flight" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_Flight_class.TestFlight" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="project_python_sql_injection_flight" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.14" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_Flight_class.TestFlight&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_Flight_class.TestFlight.test_create_flight_table" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="project_python_sql_injection_flight" />
       <option name="ENV_FILES" value="" />
@@ -64,6 +191,23 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_Flight_class.TestFlight.test_create_flight_table&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_ui.test_add_flight_link_exists" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="project_python_sql_injection_flight" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.14" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ui.test_add_flight_link_exists&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -123,9 +267,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python tests.Python tests for test_ui.test_add_flight_link_exists" />
+        <item itemvalue="Python.Flight_class" />
+        <item itemvalue="Python tests.Python tests for test_Flight_class.TestFlight" />
         <item itemvalue="Python tests.Python tests for test_Flight_class.TestFlight.test_create_flight_table" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastUrl" value="http://127.0.0.1:5000/add" />
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -142,14 +293,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1775374631745</updated>
-      <workItem from="1775374632903" duration="4013000" />
+      <workItem from="1775374632903" duration="5649000" />
+      <workItem from="1775406746277" duration="19462000" />
+      <workItem from="1775551035251" duration="12047000" />
+      <workItem from="1775804835605" duration="5984000" />
+      <workItem from="1775981457787" duration="940000" />
+      <workItem from="1775982414705" duration="1788000" />
+      <workItem from="1776169869764" duration="3007000" />
+      <workItem from="1776237983529" duration="3673000" />
+      <workItem from="1776329840089" duration="32000" />
+      <workItem from="1776582347866" duration="287000" />
+      <workItem from="1776582651277" duration="117000" />
+      <workItem from="1776582778628" duration="7607000" />
+      <workItem from="1776705761162" duration="2335000" />
+      <workItem from="1776763158553" duration="4108000" />
+      <workItem from="1776944281438" duration="945000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project_python_sql_injection_flight$.coverage" NAME=" Coverage Results" MODIFIED="1775378547865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_python_sql_injection_flight$Flight_class.coverage" NAME="Flight_class Coverage Results" MODIFIED="1776174137373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_python_sql_injection_flight$app.coverage" NAME="app Coverage Results" MODIFIED="1776597049170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_python_sql_injection_flight$project_python_sql_injection_flight.coverage" NAME="project_python_sql_injection_flight Coverage Results" MODIFIED="1776944303037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/project_python_sql_injection_flight$pytest_in_test_ui_py.coverage" NAME="pytest in test_ui.py Coverage Results" MODIFIED="1775982827547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_python_sql_injection_flight$.coverage" NAME=" Coverage Results" MODIFIED="1775982151311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

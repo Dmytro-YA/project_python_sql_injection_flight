@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}All Flights - FlightTracker{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h2>All Flights</h2>
+        <a href="{{ url_for('add_flight') }}" class="btn">Add New Flight</a>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Departure</th>
+                <th>Destination</th>
+                <th>Capacity</th>
+                <th>Passengers</th>
+                <th>Available Seats</th>
+                <th>Status</th>
+                <th>Time to Flight</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for flight in flights %}
+            <tr>
+                <td>{{ flight[0] }}</td>
+                <td>{{ flight[1] }}</td>
+                <td>{{ flight[2] }}</td>
+                <td>{{ flight[3] }}</td>
+                <td>{{ flight[4] }}</td>
+                <td>{{ flight[7] }}</td>
+                <td>{{ flight[5] }}</td>
+                <td>{{ flight[6] }}</td>
+                <td>
+                    <form id="delete-form-{{ flight[0] }}" action="{{ url_for('delete_flight', number=flight[0]) }}" method="POST" style="display:inline;">
+                        <button type="button" class="btn btn-danger" onclick="confirmDelete('{{ flight[0] }}')">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="8">No flights found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function confirmDelete(flightNumber) {
+    const password = prompt("Please enter the password to delete flight " + flightNumber + ":");
+    if (password !== null) {
+        const form = document.getElementById('delete-form-' + flightNumber);
+        
+        // Create hidden input for password
+        const passwordInput = document.createElement('input');
+        passwordInput.type = 'hidden';
+        passwordInput.name = 'delete_password';
+        passwordInput.value = password;
+        form.appendChild(passwordInput);
+        
+        form.submit();
+    }
+}
+</script>
+{% endblock %}

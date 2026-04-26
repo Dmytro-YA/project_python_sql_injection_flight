@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}Search Flights - FlightTracker{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>Search Flights</h2>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+            <h3>By Number</h3>
+            <form method="POST">
+                <input type="hidden" name="search_type" value="number">
+                <div class="form-group">
+                    <label>Flight Number:</label>
+                    <input type="text" name="number" required>
+                </div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+
+        <div>
+            <h3>By Route</h3>
+            <form method="POST">
+                <input type="hidden" name="search_type" value="params">
+                <div class="form-group">
+                    <label>Departure:</label>
+                    <input type="text" name="departure" required>
+                </div>
+                <div class="form-group">
+                    <label>Destination:</label>
+                    <input type="text" name="destination" required>
+                </div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #ccc;">
+        <h3 style="color: var(--danger);">Advanced / Demo Search (SQLi)</h3>
+        <form method="POST">
+            <input type="hidden" name="search_type" value="sql">
+            <div class="form-group">
+                <label>Flight Number:</label>
+                <input type="text" name="number">
+            </div>
+            <button type="submit" class="btn btn-danger">Vulnerable Search</button>
+        </form>
+    </div>
+
+    {% if results is not none %}
+    <div class="search-results">
+        <hr>
+        <h3>Search Results:</h3>
+        {% if results %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Departure</th>
+                    <th>Destination</th>
+                    <th>Capacity</th>
+                    <th>Passengers</th>
+                    <th>Available Seats</th>
+                    <th>Status</th>
+                    <th>Time to Flight</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for flight in results %}
+                <tr>
+                    <td>{{ flight[0] }}</td>
+                    <td>{{ flight[1] }}</td>
+                    <td>{{ flight[2] }}</td>
+                    <td>{{ flight[3] }}</td>
+                    <td>{{ flight[4] }}</td>
+                    <td>{{ flight[7] }}</td>
+                    <td>{{ flight[5] }}</td>
+                    <td>{{ flight[6] }}</td>
+                    <td>
+                        <a href="{{ url_for('book', number=flight[0]) }}" class="btn" style="padding: 0.3rem 0.6rem; font-size: 0.9rem;">Book</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <div class="alert" style="background-color: #e2e3e5; color: #383d41; border-color: #d6d8db;">No results found matching your criteria.</div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
