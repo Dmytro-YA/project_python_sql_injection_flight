@@ -51,6 +51,7 @@ class Flight:
                 stored_hash = user[2]
 
                 # 2. Проверяем, совпадает ли введенный пароль с хешем из БД
+                # checking
                 if check_password_hash(stored_hash, password):
                     return user  # Возвращаем кортеж с данными пользователя
 
