@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e9dda27-3d93-4bcf-8ac8-3fd0baa44027" name="Changes" comment="" />
+    <list default="true" id="3e9dda27-3d93-4bcf-8ac8-3fd0baa44027" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/workflow_dispatch.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/github-actions-demo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/github-actions-demo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,40 +44,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Flask server.project_python_sql_injection_flight.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for test_Flight_class.TestFlight.executor": "Run",
-    "Python tests.Python tests for test_Flight_class.TestFlight.test_create_flight_table.executor": "Run",
-    "Python tests.Python tests for test_ui.test_add_flight_link_exists.executor": "Run",
-    "Python tests.Python tests in test_Flight_class.py.executor": "Run",
-    "Python tests.Python tests in test_ui.py.executor": "Run",
-    "Python tests.pytest for test_Flight_class.TestFlight.executor": "Run",
-    "Python tests.pytest for test_Flight_class_extended.TestFlightExtended.executor": "Run",
-    "Python tests.pytest for test_ui.test_add_flight_link_exists_selenium.executor": "Run",
-    "Python tests.pytest for test_ui.test_search_link_exists_selenium.executor": "Run",
-    "Python tests.pytest in test_Flight_class_extended.py.executor": "Run",
-    "Python tests.pytest in test_ui.py.executor": "Run",
-    "Python.Flight_class.executor": "Run",
-    "Python.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/dmytroyakub/PycharmProjects/Yuriy_Preply/project_python_sql_injection_flight",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flask server.project_python_sql_injection_flight.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_Flight_class.TestFlight.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_Flight_class.TestFlight.test_create_flight_table.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_ui.test_add_flight_link_exists.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_Flight_class.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_ui.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_Flight_class.TestFlight.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_Flight_class_extended.TestFlightExtended.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_ui.test_add_flight_link_exists_selenium.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_ui.test_search_link_exists_selenium.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_Flight_class_extended.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_ui.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Flight_class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dmytroyakub/PycharmProjects/Yuriy_Preply/project_python_sql_injection_flight&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
@@ -85,7 +89,7 @@
       <recent name="$PROJECT_DIR$/testing" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_Flight_class.TestFlight">
+  <component name="RunManager" selected="Flask server.project_python_sql_injection_flight">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="project_python_sql_injection_flight" />
       <option name="ENV_FILES" value="" />
@@ -300,7 +304,8 @@
       <workItem from="1776944281438" duration="945000" />
       <workItem from="1777187295762" duration="4103000" />
       <workItem from="1777191425362" duration="1770000" />
-      <workItem from="1777791965651" duration="3131000" />
+      <workItem from="1777791965651" duration="4527000" />
+      <workItem from="1778397107939" duration="339000" />
     </task>
     <servers />
   </component>
