@@ -235,6 +235,7 @@ test_cases
 .idea/
 *.xml
 *.iml
+workspace.xml
 codeStyles
 inspectionProfiles
 
