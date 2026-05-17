@@ -224,8 +224,19 @@ search_report.gif
 test_Flight_class.py
 test_Flight_class_extended.py
 test_ui.py
+
+#Tests reports
 testing/
+bug_reports
+test_cases
+*.md
+
+# Pycharm files
 .idea/
+*.xml
+*.iml
+codeStyles
+inspectionProfiles
 
 cookies.txt
 
